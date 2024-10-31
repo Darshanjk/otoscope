@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otoscopy Image Classification</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        h1 { color: #333; }
+        input[type="file"] { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Otoscopy Image Classification</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file">Upload an otoscopy image:</label>
+        <input type="file" name="file" id="file" accept="image/*" required>
+        <button type="submit">Classify</button>
+    </form>
+</body>
+</html>
